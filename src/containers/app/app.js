@@ -1,20 +1,13 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import { hot } from "react-hot-loader/root";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const test = "hi!";
-
-class App extends Component {
-  render() {
-    return (
-      <Router>
+const App = () => (
+    <Router>
         <div>
-          <h1>This is the app base!</h1>
+            <h1>This is the app base!</h1>
         </div>
-      </Router>
-    );
-  }
-}
+    </Router>
+);
 
 export default hot(App);
